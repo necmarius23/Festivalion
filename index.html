@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Festivalion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Festivalion">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+  <nav class="navbar navbar-hidden" id="navbar-hidden">
+    <div></div>
+    <div class="hamburger-icon">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <a class="logo-holder" href="/">
+      <img src="./images/content/logo.svg" class="logo"> <span>Festivalion</span>
+
+
+    </a>
+    <ul class="nav-list right">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#fun">Let's have fun</a></li>
+      <li><a href="#artits">Our Artists</a></li>
+      <li><a href="#game">Let's play a game</a></li>
+      <li><a href="#contact">Contact us!</a></li>
+    </ul>
+    <div></div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="hero-content" id="hero-card">
+          <h1>The coolest festival is here.
+            <br>
+            Get ready to drink, smoke and listen good music!
+          </h1>
+          <p>Festivalion is the largest electronic music festival held in Romania, taking place in Cluj-Napoca at the
+            Cluj Arena. It's held annually and has been designated Best Major Festival within European Festival Awards
+            2015. Guests include a vast range of European countries, as well as Asia and North America.</p>
+          <a class="btn" style="margin-top: 1em;" href="#register"> Register now!</a>
+        </div>
+
+      </div>
+
+      <div class="column">
+        <img src="images/content/hero.jpg" class="hero-image">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container" id="fun">
+    <div class="row">
+      <div class="column">
+        <h2 class="title">This is what fun looks like</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="video-container" id="home">
+          <video autoplay loop muted class="video-bg" id="video-bg">
+            <source src="/video/teaser.mp4" type="video/mp4" alt="HTML5 background video">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <p style="max-width:500px; margin:auto">The second edition of Festivalion took place in 2016, from 4 to 7 August
+          mainly on Cluj Arena. It welcomed Top 5 DJ's of the world: Tiësto, Hardwell, Martin Garrix, Dimitri Vegas &
+          Like Mike and Armin van Buuren, plus Afrojack. Other performing live artists were: Dannic, Fedde Le Grand,
+          Naughty Boy, Lost Frequencies, Faithless, Parov Stellar, Scooter, Ella Eyre, James Arthur, Kwabs, Labrinth,
+          John Digweed, Sasha, Nneka and Tujamo. It took place during four days in the centre of Cluj-Napoca and
+          involved 10 stages. Over 30,000 foreigners attended the 2016 edition. The festival itself attracted a crowd of
+          300,000 over four days</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="artists">
+    <div class="row">
+      <div class="column">
+        <h2 class="title">Meet our artists</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card gorillaz" onclick="showModal('gorillaz')" onmouseover="playAudio('gorillaz')"
+          onmouseout="closeAudio()"></div>
+      </div>
+      <div class="column">
+        <div class="card twenty-one-pilots" onclick="showModal('21pilots')" onmouseover="playAudio('heathens')"
+          onmouseout="closeAudio()"></div>
+      </div>
+      <div class="column">
+        <div class="card five-gang" onclick="showModal('5gang')" onmouseover="playAudio('5gang')"
+          onmouseout="closeAudio()"></div>
+      </div>
+      <div class="column">
+        <div class="card iuliana-beregoi" onclick="showModal('iuliana')" onmouseover="playAudio('iulianaberegoi')"
+          onmouseout="closeAudio()"></div>
+      </div>
+    </div>
+  </div>
+<div class="container" id="game">
+  <div class="row">
+    <div class="column">
+      <h2 class="title">Let's play a game!</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card full-width-card" style="max-width: 100%; ">
+        <p>First listen to the song</p>
+        <p class="btn" onclick="playGame(['answer-1','answer-2','answer-3', 'answer-4', 'answer-5'])">Give me a song!</p>
+        <audio controls id="gameAudio">
+          <source src="" type="audio/mp3" id="gameAudioSource">
+        </audio> 
+        <p style="margin-bottom:30px">Pick the name of the song</p>
+        <div id="answers">
+          <ul style="list-style: none;padding: inherit;">
+            <li class="answer" onclick="checkAnswer('5GANG - FORTZINNI','answer-1')" id='answer-1'>5GANG - FORTZINNI</li>
+            <li class="answer" onclick="checkAnswer('Gorillaz - Clint Eastwood','answer-2')" id='answer-2'>Gorillaz - Clint Eastwood</li>
+            <li class="answer" onclick="checkAnswer('Gorillaz - Feel Good Inc.','answer-3')" id='answer-3'>Gorillaz - Feel Good Inc.</li>
+            <li class="answer" onclick="checkAnswer('Iuliana Beregoi - Cum suna linistea','answer-4')" id='answer-4'>Iuliana Beregoi - Cum suna linistea</li>
+            <li class="answer" onclick="checkAnswer('twenty one pilots - Chlorine','answer-5')" id='answer-5'>twenty one pilots - Chlorine</li>
+          </ul>
+        
+
+        </div>
+        <br>
+        <p>Now sing a bit for us!</p>
+        <a id="speech" class='btn'>Start listening</a>
+        <p id='result'></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <h2 class="title">Sometimes we are doing this without a purpose, and that's okay!</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <p class="btn" onclick="bouncing()">Show me the ball!</p>
+      <div class="canvas-holder">
+        <canvas id="myCanvas" style="border:3px  solid #000000;">
+        </canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <div class="row">
+    <div class="column">
+      <h2 class="title">Contact us!</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <form class="form contact-form" action="https://formspree.io/donnyburnside1@gmail.com">
+        <div>
+          <label class="form-label" for="name">Name</label>
+          <input class="form-control" id="name" name="name" type="text" required />
+        </div>
+        <div>
+          <label class="form-label" for="email">Email</label>
+          <input class="form-control" id="email" name="email" type="email" required />
+        </div>
+        <div>
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" required></textarea>
+        </div>
+        <div>
+          <label class="form-label" for="subscribe">Subscribe?</label>
+          <input class="" id="subscribe" name="subscribe" type="checkbox" />
+        </div>
+        <div>
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- hidden items -->
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="modal-overlay" id="modal-overlay">
+          <div class="modal" id="modal">
+
+            <a class="close-modal" onclick="closeModal()">
+              <svg viewBox="0 0 20 20">
+                <path fill="#000000"
+                  d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+                </path>
+              </svg>
+            </a>
+
+            <div class="modal-content">
+              <h3 id="modal-title" class="flipX"></h3>
+              <figure class="grow-img">
+                <img src="" alt="" class="hero-image" id="modal-image">
+              </figure>
+              <p id="modal-content"></p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <audio style="display: none;">
+    <source id="audioSource">
+    </source>
+  </audio>
+
+  <script src="js/main.js"> </script>
+
+</body>
+
+</html>
